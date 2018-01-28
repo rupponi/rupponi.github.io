@@ -16,10 +16,15 @@ h2 {
 }
 h3 {
     color :#fff;
-    font-size: 175%;
+    font-size: 150%;
+    font-weight: 100;
+    line-height: 150%;
+}
+h4 {
+    color: #fff;
+    font-size: 150%;
     font-weight: 100;
     letter-spacing: 0.1rem;
-    line-height: 1.5rem;
 }
 hr {
     border: 0.05rem solid #333;
@@ -237,45 +242,38 @@ h1 {
 }
 @-webkit-keyframes hovButton {
     0% {
-        height: 4rem;
-        width: 4rem;
+        filter: grayscale(100%);
     }
     100% {
-        height: 4.5rem;
-        width: 4.5rem;
+        filter: grayscale(0%);
     }
 }
 @keyframes hovButton {
     0% {
-        height: 4rem;
-        width: 4rem;
+        filter: grayscale(100%);
     }
     100% {
-        height: 4.5rem;
-        width: 4.5rem;
+        filter: grayscale(0%);
     }
 }
 @-webkit-keyframes unHovButton {
     0% {
-        height: 4.5rem;
-        width: 4.5rem;
+        filter: grayscale(0%);
     }
     100% {
-        height: 4rem;
-        width: 4rem;
+        filter: grayscale(100%);
     }
 }
 @keyframes unHovButton {
     0% {
-        height: 4.5rem;
-        width: 4.5rem;
+        filter: grayscale(0%);
     }
     100% {
-        height: 4rem;
-        width: 4rem;
+        filter: grayscale(100%);
     }
 }
 #mail-ref {
+    filter: grayscale(100%);
     height: 4rem;
     width: 4rem;
     margin-right: 4rem;
@@ -299,6 +297,7 @@ h1 {
     -webkit-animation-fill-mode: forwards;
 }
 #github-ref {
+    filter: grayscale(100%);
     height: 4rem;
     width: 4rem;
     margin-right: 4rem;
@@ -322,6 +321,7 @@ h1 {
     -webkit-animation-fill-mode: forwards;
 }
 #linkedin-ref {
+    filter: grayscale(100%);
     height: 4rem;
     width: 4rem;
     animation-name: unHovButton;
