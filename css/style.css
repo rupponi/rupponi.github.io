@@ -1,6 +1,6 @@
 html {
     font-size: 16px;
-    height: 300rem;
+    height: 100rem;
 }
 body {
     text-align: right;
@@ -374,25 +374,4 @@ h1 {
     display: inline-block;
     width: 80%;
     max-width: 40rem;
-}
-
-
-#portfolio {
-    position: absolute;
-    top: 200%;
-    height: 100%;
-    width: 100%;
-}
-
-.construction-handler-container {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    text-align: center;
-}
-.construction-handler {
-    display: inline-block;
-    opacity: 0;
-    width: 80%;
-    max-width: 70rem;
 }
