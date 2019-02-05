@@ -24,13 +24,36 @@ $(document).ready(function() {
        targetAngle.style.msTransform = "rotate("+deg+"deg)";
        targetAngle.style.transform = "rotate("+deg+"deg)";
 
-       var targetPos = document.getElementById("nav-list"), pos = translated ? 0 : 9.5;
+       var aboutPos = document.getElementById("about-link"), aboutOffset = translated ? 0 : 3;
 
-       targetPos.style.webkitTransform = "translate(0px,"+pos+"rem)";
-       targetPos.style.mozTransform = "translate(0px,"+pos+"rem)";
-       targetPos.style.oTransform = "translate(0px,"+pos+"rem)";
-       targetPos.style.msTransform = "translate(0px,"+pos+"rem)";
-       targetPos.style.transform = "translate(0px,"+pos+"rem)";
+       aboutPos.style.webkitTransform = "translate(0px, "+aboutOffset+"rem)";
+       aboutPos.style.mozTransform = "translate(0px, "+aboutOffset+"rem)";
+       aboutPos.style.oTransform = "translate(0px, "+aboutOffset+"rem)";
+       aboutPos.style.msTransform = "translate(0px, "+aboutOffset+"rem)";
+       aboutPos.style.transform = "translate(0px, "+aboutOffset+"rem)";
+
+       var resumePos = document.getElementById("resume-link"), resumeOffset = translated ? 0 : 6;
+
+       resumePos.style.webkitTransform = "translate(0px, "+resumeOffset+"rem)";
+       resumePos.style.mozTransform = "translate(0px, "+resumeOffset+"rem)";
+       resumePos.style.oTransform = "translate(0px, "+resumeOffset+"rem)";
+       resumePos.style.msTransform = "translate(0px, "+resumeOffset+"rem)";
+       resumePos.style.transform = "translate(0px, "+resumeOffset+"rem)";
+
+       var portfolioPos = document.getElementById("portfolio-link"), portfolioOffset = translated ? 0 : 9;
+
+       portfolioPos.style.webkitTransform = "translate(0px, "+portfolioOffset+"rem)";
+       portfolioPos.style.mozTransform = "translate(0px, "+portfolioOffset+"rem)";
+       portfolioPos.style.oTransform = "translate(0px, "+portfolioOffset+"rem)";
+       portfolioPos.style.msTransform = "translate(0px, "+portfolioOffset+"rem)";
+       portfolioPos.style.transform = "translate(0px, "+portfolioOffset+"rem)";
+
+       var listBackground = document.getElementById("list-background"), length = translated ? 0 : 25;
+
+       listBackground.style.mozTransform = "scale(1, "+length+")";
+       listBackground.style.oTransform = "scale(1, "+length+")";
+       listBackground.style.msTransform = "scale(1, "+length+")";
+       listBackground.style.transform = "scale(1, "+length+")";
 
        rotated = !rotated;
        translated = !translated;

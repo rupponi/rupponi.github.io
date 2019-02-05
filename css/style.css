@@ -81,34 +81,81 @@ hr {
     background-color: #101014;
     display: inline-block;
     position: fixed;
-    margin-top: -6rem;
     margin-left: -9.9rem;
+}
+
+#list-background {
+    position: absolute;
+    background-color: #101014;
+    height: 1rem;
+    width: 20rem;
+    margin-left: -5rem;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+
+#about-link {
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#resume-link {
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+#portfolio-link {
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
 .list-link {
-    opacity: 1;
     text-align: right;
     list-style-type: none;
     font-size: 1.3rem;
     margin: 0.5rem 2rem 0.5rem -1rem;
 }
-#listOp1 {
-    color: #fff;
-    text-decoration: none;
-}
-#listOp2 {
-    color: #fff;
-    text-decoration: none;
-}
-#listOp3 {
+
+.link-ref, a:link, a:visited {
     color: #fff;
     text-decoration: none;
 }
 
+.link-ref {
+    animation-name: unHovButton;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: unHovButton;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
+.link-ref:hover {
+    animation-name: hovButton;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: hovButton;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards;
+}
 
 #intro {
     position: absolute;
@@ -204,25 +251,25 @@ h1 {
 @-webkit-keyframes hovRefs {
     0% {
         opacity: 0;
-        margin-top: 5rem;
+        margin-top: 10%;
     }
     100% {
         opacity: 1;
-        margin-top: 2rem;
+        margin-top: 0%;
     }
 }
 @keyframes hovRefs {
     0% {
         opacity: 0;
-        margin-top: 5rem;
+        margin-top: 10%;
     }
     100% {
         opacity: 1;
-        margin-top: 2rem;
+        margin-top: 0%;
     }
 }
 #contact-favicons {
-    height: 6rem;
+    height: 10%;
     width: 100%;
     position: absolute;
     top: 90%;
