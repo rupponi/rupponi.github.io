@@ -98,5 +98,8 @@ $(document).ready(function() {
        listBackground.style.oTransform = "scale(1, "+length+")";
        listBackground.style.msTransform = "scale(1, "+length+")";
        listBackground.style.transform = "scale(1, "+length+")";
+
+       rotated = !rotated;
+       translated = !translated;
    });
 });
