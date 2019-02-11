@@ -48,7 +48,7 @@ $(document).ready(function() {
        portfolioPos.style.msTransform = "translate(0px, "+portfolioOffset+"rem)";
        portfolioPos.style.transform = "translate(0px, "+portfolioOffset+"rem)";
 
-       var listBackground = document.getElementById("list-background"), length = translated ? 0 : 25;
+       var listBackground = document.getElementById("list-background"), length = translated ? 0 : 18;
 
        listBackground.style.mozTransform = "scale(1, "+length+")";
        listBackground.style.oTransform = "scale(1, "+length+")";
@@ -84,22 +84,14 @@ $(document).ready(function() {
        resumePos.style.msTransform = "translate(0px, "+resumeOffset+"rem)";
        resumePos.style.transform = "translate(0px, "+resumeOffset+"rem)";
 
-       var portfolioPos = document.getElementById("portfolio-link"), portfolioOffset = translated ? 0 : -9;
-
-       portfolioPos.style.webkitTransform = "translate(0px, "+portfolioOffset+"rem)";
-       portfolioPos.style.mozTransform = "translate(0px, "+portfolioOffset+"rem)";
-       portfolioPos.style.oTransform = "translate(0px, "+portfolioOffset+"rem)";
-       portfolioPos.style.msTransform = "translate(0px, "+portfolioOffset+"rem)";
-       portfolioPos.style.transform = "translate(0px, "+portfolioOffset+"rem)";
-
-       var listBackground = document.getElementById("list-background"), length = translated ? 0 : -25;
+       var listBackground = document.getElementById("list-background"), length = translated ? 0 : -18;
 
        listBackground.style.mozTransform = "scale(1, "+length+")";
        listBackground.style.oTransform = "scale(1, "+length+")";
        listBackground.style.msTransform = "scale(1, "+length+")";
        listBackground.style.transform = "scale(1, "+length+")";
 
-       rotated = !rotated;
-       translated = !translated;
+       rotated = false;
+       translated = false;
    });
 });
